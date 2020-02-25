@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\InstagramProjects.BoundedContext\InstagramProjects.BoundedContext.csproj" />
+    <ProjectReference Include="..\InstagramProjects.UnitOfWork\InstagramProjects.UnitOfWork.csproj" />
+    <ProjectReference Include="..\InstagramProjects.Models\InstagramProjects.Models.csproj" />
+    <ProjectReference Include="..\InstagramProjects.Infrastructure\InstagramProjects.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+</Project>
