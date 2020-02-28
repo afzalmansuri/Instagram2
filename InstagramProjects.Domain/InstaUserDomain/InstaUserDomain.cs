@@ -19,8 +19,9 @@ namespace InstagramProjects.Domain.InstaUserModule
             throw new NotImplementedException();
         }
 
-        public Task<object> GetBy(InstaUser parameters)
+        public async Task<object> GetBy(InstaUser parameters)
         {
+            return await Uow.Repository<InstaUser>().FindByAsync(t => t.InstaUserId == parameters.InstaUserId);
             throw new NotImplementedException();
         }
         

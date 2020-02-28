@@ -40,9 +40,10 @@ namespace InstagramProjects.Models.Main
 		#region TagStatus Annotations
 
         [Required]
+        [MaxLength(10)]
 		#endregion TagStatus Annotations
 
-        public bool TagStatus { get; set; }
+        public string TagStatus { get; set; }
 
 		#region TagDateTime Annotations
 

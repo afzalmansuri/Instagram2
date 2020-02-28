@@ -22,4 +22,16 @@ chatDetails : ChatDetailBase[];
 
 //#endregion Generated Reference Properties
 
+
+
+
+
+
+
+
+
+
+
+
+
 }

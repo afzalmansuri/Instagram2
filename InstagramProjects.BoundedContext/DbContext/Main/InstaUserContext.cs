@@ -20,7 +20,13 @@ namespace InstagramProjects.BoundedContext.Main
 		public DbSet<UserDetail> UserDetails { get; set; }
 		public DbSet<UserPrivacy> UserPrivacys { get; set; }
 		public DbSet<vEditProfile> vEditProfile { get; set; }
+
+       
+        		public DbSet<vInstaUser> vInstaUsers { get; set; }
+            		
             #endregion DbSets
+
+
 
 
     }

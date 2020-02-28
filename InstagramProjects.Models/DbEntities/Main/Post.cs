@@ -68,13 +68,6 @@ namespace InstagramProjects.Models.Main
 
         public virtual InstaUser InstaUser { get; set; }
 
-		#region PostTags Annotations
-
-        [InverseProperty("Post")]
-		#endregion PostTags Annotations
-
-        public virtual ICollection<PostTag> PostTags { get; set; }
-
 		#region PostComments Annotations
 
         [InverseProperty("Post")]
@@ -96,13 +89,28 @@ namespace InstagramProjects.Models.Main
 
         public virtual ICollection<PostShare> PostShares { get; set; }
 
+		#region InstaActivityLog Annotations
+
+        [InverseProperty("Post")]
+		#endregion InstaActivityLog Annotations
+
+        public virtual ICollection<InstaActivityLog> InstaActivityLog { get; set; }
+
+		#region PostTags Annotations
+
+        [InverseProperty("Post")]
+		#endregion PostTags Annotations
+
+        public virtual ICollection<PostTag> PostTags { get; set; }
+
 
         public Post()
         {
-			PostTags = new HashSet<PostTag>();
 			PostComments = new HashSet<PostComment>();
 			PostLikes = new HashSet<PostLike>();
 			PostShares = new HashSet<PostShare>();
+			InstaActivityLog = new HashSet<InstaActivityLog>();
+			PostTags = new HashSet<PostTag>();
         }
 	}
 }

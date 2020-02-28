@@ -22,4 +22,16 @@ viewStorys : ViewStoryBase[];
 
 //#endregion Generated Reference Properties
 
+
+
+
+
+
+
+
+
+
+
+
+
 }

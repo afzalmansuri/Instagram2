@@ -6,3 +6,11 @@ C:\Users\radix\source\repos\InstagramProjects\InstagramProjects.Models\obj\Debug
 C:\Users\radix\source\repos\InstagramProjects\InstagramProjects.Models\obj\Debug\netcoreapp3.1\InstagramProjects.Models.AssemblyInfo.cs
 C:\Users\radix\source\repos\InstagramProjects\InstagramProjects.Models\obj\Debug\netcoreapp3.1\InstagramProjects.Models.dll
 C:\Users\radix\source\repos\InstagramProjects\InstagramProjects.Models\obj\Debug\netcoreapp3.1\InstagramProjects.Models.pdb
+C:\Users\radix\source\repos\Instagram2\InstagramProjects.Models\bin\Debug\netcoreapp3.1\InstagramProjects.Models.deps.json
+C:\Users\radix\source\repos\Instagram2\InstagramProjects.Models\bin\Debug\netcoreapp3.1\InstagramProjects.Models.dll
+C:\Users\radix\source\repos\Instagram2\InstagramProjects.Models\bin\Debug\netcoreapp3.1\InstagramProjects.Models.pdb
+C:\Users\radix\source\repos\Instagram2\InstagramProjects.Models\obj\Debug\netcoreapp3.1\InstagramProjects.Models.csprojAssemblyReference.cache
+C:\Users\radix\source\repos\Instagram2\InstagramProjects.Models\obj\Debug\netcoreapp3.1\InstagramProjects.Models.AssemblyInfoInputs.cache
+C:\Users\radix\source\repos\Instagram2\InstagramProjects.Models\obj\Debug\netcoreapp3.1\InstagramProjects.Models.AssemblyInfo.cs
+C:\Users\radix\source\repos\Instagram2\InstagramProjects.Models\obj\Debug\netcoreapp3.1\InstagramProjects.Models.dll
+C:\Users\radix\source\repos\Instagram2\InstagramProjects.Models\obj\Debug\netcoreapp3.1\InstagramProjects.Models.pdb

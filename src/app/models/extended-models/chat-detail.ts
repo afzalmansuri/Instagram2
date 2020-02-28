@@ -18,4 +18,16 @@ storyComment : StoryCommentBase;
 
 //#endregion Generated Reference Properties
 
+
+
+
+
+
+
+
+
+
+
+
+
 }

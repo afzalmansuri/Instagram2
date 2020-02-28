@@ -18,4 +18,16 @@ userRoles : UserRoleBase[];
 
 //#endregion Generated Reference Properties
 
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -10,4 +10,16 @@ export class vUserPost extends vUserPostBase
 
 //#endregion Generated Reference Properties
 
+
+
+
+
+
+
+
+
+
+
+
+
 }

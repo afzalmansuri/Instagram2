@@ -10,28 +10,16 @@ namespace InstagramProjects.Models.Main
     [Table("vUserPosts",Schema="dbo")]
     public partial class vUserPost
     {
-		#region PostId Annotations
-
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [System.ComponentModel.DataAnnotations.Key]
-		#endregion PostId Annotations
-
-        public int PostId { get; set; }
-
 
         public string PostContent { get; set; }
 
+		#region InstaUserId Annotations
 
-        public string PostCaption { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [System.ComponentModel.DataAnnotations.Key]
+		#endregion InstaUserId Annotations
 
-
-        public int TaggedUserId { get; set; }
-
-
-        public string Status { get; set; }
-
-
-        public bool TagStatus { get; set; }
+        public int InstaUserId { get; set; }
 
 
         public vUserPost()

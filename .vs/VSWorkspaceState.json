@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\InstagramProjects.Api",
+    "\\InstagramProjects.Api\\Controllers",
+    "\\InstagramProjects.Api\\Controllers\\Api",
+    "\\InstagramProjects.Api\\Controllers\\Api\\InstaUserModule"
   ],
   "PreviewInSolutionExplorer": false
 }

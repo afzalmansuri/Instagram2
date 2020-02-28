@@ -26,7 +26,8 @@ export class PostTagBase {
 
 //#region tagStatus Prop
         @required()
-        tagStatus : boolean;
+        @maxLength({value:10})
+        tagStatus : string;
 //#endregion tagStatus Prop
 
 

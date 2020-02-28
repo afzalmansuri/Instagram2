@@ -10,7 +10,30 @@ using InstagramProjects.BoundedContext.Main;
 using InstagramProjects.UnitOfWork.Main;
 using InstagramProjects.Domain.InstaUserModule;
           
+            
+            using InstagramProjects.Domain.InstaLoginModule;
+           
+            using InstagramProjects.Domain.PostModule;
+            
+            using InstagramProjects.Domain.ChatModule;
+            using InstagramProjects.Domain.FollowSystemModule;
+           
+            using InstagramProjects.Domain.ActivityLogModule;
+            using InstagramProjects.Domain.HomeModule;
+            using InstagramProjects.Domain.StoryModule;
             #endregion Namespace
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -36,7 +59,27 @@ namespace InstagramProjects.Api.Bootstrap
             serviceCollection.AddScoped<ILoginUow, LoginUow>();
                         serviceCollection.AddScoped<IInstaUserContext, InstaUserContext>();
             serviceCollection.AddScoped<IInstaUserUow, InstaUserUow>();
+                       
+                        serviceCollection.AddScoped<IPostContext, PostContext>();
+            serviceCollection.AddScoped<IPostUow, PostUow>();
+                        serviceCollection.AddScoped<IChatContext, ChatContext>();
+            serviceCollection.AddScoped<IChatUow, ChatUow>();
+                        serviceCollection.AddScoped<IFollowSystemContext, FollowSystemContext>();
+            serviceCollection.AddScoped<IFollowSystemUow, FollowSystemUow>();
+                        serviceCollection.AddScoped<IActivityLogContext, ActivityLogContext>();
+            serviceCollection.AddScoped<IActivityLogUow, ActivityLogUow>();
+                        serviceCollection.AddScoped<IHomeContext, HomeContext>();
+            serviceCollection.AddScoped<IHomeUow, HomeUow>();
+                        serviceCollection.AddScoped<IStoriesContext, StoriesContext>();
+            serviceCollection.AddScoped<IStoriesUow, StoriesUow>();
             #endregion ContextService
+
+
+
+
+
+
+
 
 
 
@@ -51,7 +94,69 @@ namespace InstagramProjects.Api.Bootstrap
             serviceCollection.AddScoped<IUserDetailDomain, UserDetailDomain>();
             
             serviceCollection.AddScoped<IUserDetailDomain, UserDetailDomain>();
+            
+            serviceCollection.AddScoped<IInstaLoginDomain, InstaLoginDomain>();
+            serviceCollection.AddScoped<IPostLikeDomain, PostLikeDomain>();
+            
+            serviceCollection.AddScoped<IPostCommentDomain, PostCommentDomain>();
+           
+            serviceCollection.AddScoped<IChatDomain, ChatDomain>();
+            
+            serviceCollection.AddScoped<IPostShareDomain, PostShareDomain>();
+            
+            serviceCollection.AddScoped<IPostTagDomain, PostTagDomain>();
+            
+            serviceCollection.AddScoped<IFollowerDomain, FollowerDomain>();
+            
+            serviceCollection.AddScoped<IvFollowerDomain, vFollowerDomain>();
+            
+            serviceCollection.AddScoped<IvFollowingDomain, vFollowingDomain>();
+            
+           
+            
+            serviceCollection.AddScoped<IvActivityLogDomain, vActivityLogDomain>();
+            
+            serviceCollection.AddScoped<IvFollowerPostDomain, vFollowerPostDomain>();
+            
+            serviceCollection.AddScoped<IvFollowerStoryDomain, vFollowerStoryDomain>();
+            
+            serviceCollection.AddScoped<IChatAllDomain, ChatAllDomain>();
+            
+            serviceCollection.AddScoped<IStoryDomain, StoryDomain>();
+            
+            serviceCollection.AddScoped<IViewStoryDomain, ViewStoryDomain>();
             #endregion DomainService
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -10,4 +10,16 @@ export class vUserProfile extends vUserProfileBase
 
 //#endregion Generated Reference Properties
 
+
+
+
+
+
+
+
+
+
+
+
+
 }

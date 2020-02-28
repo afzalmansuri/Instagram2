@@ -95,13 +95,6 @@ namespace InstagramProjects.Models.Main
 
         public virtual ICollection<Post> Posts { get; set; }
 
-		#region PostTags Annotations
-
-        [InverseProperty("InstaUser")]
-		#endregion PostTags Annotations
-
-        public virtual ICollection<PostTag> PostTags { get; set; }
-
 		#region Chats Annotations
 
         [InverseProperty("InstaUser")]
@@ -193,12 +186,18 @@ namespace InstagramProjects.Models.Main
 
         public virtual ICollection<StoryTag> StoryTags { get; set; }
 
+		#region PostTags Annotations
+
+        [InverseProperty("InstaUser")]
+		#endregion PostTags Annotations
+
+        public virtual ICollection<PostTag> PostTags { get; set; }
+
 
         public InstaUser()
         {
 			UserDetails = new HashSet<UserDetail>();
 			Posts = new HashSet<Post>();
-			PostTags = new HashSet<PostTag>();
 			Chats = new HashSet<Chat>();
 			Chats1 = new HashSet<Chat>();
 			Followers = new HashSet<Follower>();
@@ -212,6 +211,7 @@ namespace InstagramProjects.Models.Main
 			StoryShares = new HashSet<StoryShare>();
 			StoryShares1 = new HashSet<StoryShare>();
 			StoryTags = new HashSet<StoryTag>();
+			PostTags = new HashSet<PostTag>();
         }
 	}
 }

@@ -7,6 +7,10 @@
     <ProjectReference Include="..\InstagramProjects.Infrastructure\InstagramProjects.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ChatDomain\" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>

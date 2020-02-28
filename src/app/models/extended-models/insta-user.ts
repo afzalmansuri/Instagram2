@@ -2,7 +2,6 @@ import {InstaUserBase} from '../database-models/insta-user-base';
 import {UserPrivacyBase} from '../database-models/user-privacy-base';
 import {UserDetailBase} from '../database-models/user-detail-base';
 import {PostBase} from '../database-models/post-base';
-import {PostTagBase} from '../database-models/post-tag-base';
 import {ChatBase} from '../database-models/chat-base';
 import {Chats1Base} from '../database-models/chats-1-base';
 import {FollowerBase} from '../database-models/follower-base';
@@ -16,6 +15,7 @@ import {StoryCommentBase} from '../database-models/story-comment-base';
 import {StoryShareBase} from '../database-models/story-share-base';
 import {StoryShares1Base} from '../database-models/story-shares-1-base';
 import {StoryTagBase} from '../database-models/story-tag-base';
+import {PostTagBase} from '../database-models/post-tag-base';
 //Generated Imports
 export class InstaUser extends InstaUserBase 
 {
@@ -33,9 +33,6 @@ userDetails : UserDetailBase[];
 //#region posts Prop
 posts : PostBase[];
 //#endregion posts Prop
-//#region postTags Prop
-postTags : PostTagBase[];
-//#endregion postTags Prop
 //#region chats Prop
 chats : ChatBase[];
 //#endregion chats Prop
@@ -75,7 +72,22 @@ storyShares1 : StoryShareBase[];
 //#region storyTags Prop
 storyTags : StoryTagBase[];
 //#endregion storyTags Prop
+//#region postTags Prop
+postTags : PostTagBase[];
+//#endregion postTags Prop
 
 //#endregion Generated Reference Properties
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

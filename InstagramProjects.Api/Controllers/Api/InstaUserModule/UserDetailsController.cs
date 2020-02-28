@@ -14,6 +14,6 @@ namespace InstagramProjects.Api.Controllers.InstaUserModule
 
     {
         public UserDetailsController(IUserDetailDomain domain):base(domain) {}
-
+          
     }
 }
