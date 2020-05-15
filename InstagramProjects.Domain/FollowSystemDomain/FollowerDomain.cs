@@ -31,8 +31,12 @@ namespace InstagramProjects.Domain.FollowSystemModule
 
         public async Task AddAsync(Follower entity)
         {
-            await Uow.RegisterNewAsync(entity);
-            await Uow.CommitAsync();
+            var count = Uow.Repository<Follower>().Count(t => t.FollowBy == entity.FollowBy && t.FollowTo == entity.FollowTo);
+            if (count == 0)
+            {
+                await Uow.RegisterNewAsync(entity);
+                await Uow.CommitAsync();
+            }
         }
 
         public HashSet<string> UpdateValidation(Follower entity)

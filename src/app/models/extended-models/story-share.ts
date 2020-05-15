@@ -2,7 +2,7 @@ import {StoryShareBase} from '../database-models/story-share-base';
 import {StoryBase} from '../database-models/story-base';
 import {UserPrivacyBase} from '../database-models/user-privacy-base';
 import {InstaUserBase} from '../database-models/insta-user-base';
-import {InstaUser1Base} from '../database-models/insta-user-1-base';
+// import {InstaUser1Base} from '../database-models/insta-user-1-base';
 //Generated Imports
 export class StoryShare extends StoryShareBase 
 {
@@ -21,7 +21,7 @@ userPrivacy : UserPrivacyBase;
 instaUser : InstaUserBase;
 //#endregion instaUser Prop
 //#region instaUser1 Prop
-instaUser1 : InstaUserBase;
+// instaUser1 : InstaUserBase;
 //#endregion instaUser1 Prop
 
 //#endregion Generated Reference Properties

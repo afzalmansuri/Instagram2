@@ -19,14 +19,15 @@ namespace InstagramProjects.Domain.PostModule
             DbContextManager = dbContextManager;
         }
 
-        public Task<object> GetAsync(PostLike parameters)
+        public async Task<object> GetAsync(PostLike parameters)
         {
+            return await Uow.Repository<PostLike>().AllAsync();
             throw new NotImplementedException();
         }
 
         public async Task<object> GetBy(PostLike parameters)
         {
-            return await Uow.Repository<PostLike>().FindByAsync(t => t.PostId == parameters.PostId);
+            return await Uow.Repository<vUserLike>().FindByAsync(t => t.PostId == parameters.PostId);
             throw new NotImplementedException();
         }
         

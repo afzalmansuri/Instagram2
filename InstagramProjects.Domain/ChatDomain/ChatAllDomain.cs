@@ -4,13 +4,19 @@ using System.Threading.Tasks;
 using RxWeb.Core;
 using InstagramProjects.UnitOfWork.Main;
 using InstagramProjects.Models.Main;
+using InstagramProjects.BoundedContext.SqlContext;
+using Microsoft.Data.SqlClient;
+using RxWeb.Core.Data;
+using InstagramProjects.Models.ViewModels;
+
 
 namespace InstagramProjects.Domain.ChatModule
 {
     public class ChatAllDomain : IChatAllDomain
     {
-        public ChatAllDomain(IChatUow uow) {
+        public ChatAllDomain(IChatUow uow, IDbContextManager<MainSqlDbContext> dbContextManager) {
             this.Uow = uow;
+            DbContextManager = dbContextManager;
         }
 
         public Task<object> GetAsync(Chat parameters)
@@ -20,8 +26,20 @@ namespace InstagramProjects.Domain.ChatModule
 
         public async Task<object> GetBy(Chat parameters)
         {
-            var chatlist = await Uow.Repository<Chat>().FindByAsync(t => t.SenderId == parameters.SenderId);
-            return await Task.FromResult(chatlist);
+           
+
+            await DbContextManager.BeginTransactionAsync();
+
+            var spParameters = new SqlParameter[2];
+            spParameters[0] = new SqlParameter() { ParameterName = "SenderId", Value = parameters.SenderId };
+            spParameters[1] = new SqlParameter() { ParameterName = "RecieverId", Value = parameters.RecieverId };
+
+           
+            var result=await DbContextManager.StoreProc<StoreProcResult>("[dbo].vChats ", spParameters);
+
+           
+            
+            return await Task.FromResult(result);
             throw new NotImplementedException();
         }
         
@@ -61,6 +79,7 @@ namespace InstagramProjects.Domain.ChatModule
         public IChatUow Uow { get; set; }
 
         private HashSet<string> ValidationMessages { get; set; } = new HashSet<string>();
+        private IDbContextManager<MainSqlDbContext> DbContextManager { get; set; }
     }
 
     public interface IChatAllDomain : ICoreDomain<Chat,Chat> { }

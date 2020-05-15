@@ -21,7 +21,12 @@ using InstagramProjects.Domain.InstaUserModule;
             using InstagramProjects.Domain.ActivityLogModule;
             using InstagramProjects.Domain.HomeModule;
             using InstagramProjects.Domain.StoryModule;
+          
+           
             #endregion Namespace
+
+
+
 
 
 
@@ -72,7 +77,12 @@ namespace InstagramProjects.Api.Bootstrap
             serviceCollection.AddScoped<IHomeUow, HomeUow>();
                         serviceCollection.AddScoped<IStoriesContext, StoriesContext>();
             serviceCollection.AddScoped<IStoriesUow, StoriesUow>();
+               
+                        serviceCollection.AddScoped<IUserProfileContext, UserProfileContext>();
+            serviceCollection.AddScoped<IUserProfileUow, UserProfileUow>();
             #endregion ContextService
+
+
 
 
 
@@ -125,7 +135,22 @@ namespace InstagramProjects.Api.Bootstrap
             serviceCollection.AddScoped<IStoryDomain, StoryDomain>();
             
             serviceCollection.AddScoped<IViewStoryDomain, ViewStoryDomain>();
+            
+            
+            
+            serviceCollection.AddScoped<IPostDomain, PostDomain>();
+            
+            serviceCollection.AddScoped<IChatWithAllUserDomain, ChatWithAllUserDomain>();
+            
+            
+            
+            serviceCollection.AddScoped<IUserProfileDomain, UserProfileDomain>();
             #endregion DomainService
+
+
+
+
+
 
 
 

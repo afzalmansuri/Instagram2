@@ -7,29 +7,26 @@ using RxWeb.Core.Sanitizers;
 using InstagramProjects.BoundedContext.SqlContext;
 namespace InstagramProjects.Models.Main
 {
-    [Table("VLikes",Schema="dbo")]
-    public partial class VLike
+    [Table("vLike", Schema = "dbo")]
+    public partial class vLike
     {
-		#region LikedById Annotations
+
+        public string InstaUserFullName { get; set; }
+
+
+        public System.DateTimeOffset LikeDateTime { get; set; }
+
+        #region PostId Annotations
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [System.ComponentModel.DataAnnotations.Key]
-		#endregion LikedById Annotations
+        #endregion PostId Annotations
 
-        public int LikedById { get; set; }
-
-
-        public string InstaUserName { get; set; }
+        public int PostId { get; set; }
 
 
-        public string PostContent { get; set; }
-
-
-        public int InstaUserId { get; set; }
-
-
-        public VLike()
+        public vLike()
         {
         }
-	}
+    }
 }

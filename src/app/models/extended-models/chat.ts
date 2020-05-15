@@ -1,7 +1,7 @@
-import {ChatBase} from '../database-models/chat-base';
-import {InstaUserBase} from '../database-models/insta-user-base';
-import {InstaUser1Base} from '../database-models/insta-user-1-base';
-import {ChatDetailBase} from '../database-models/chat-detail-base';
+import {ChatBase} from '@app/database-models';
+import {InstaUserBase} from '@app/database-models';
+// import {InstaUser1Base} from '../database-models/insta-user-1-base';
+import {ChatDetailBase} from '@app/database-models';
 //Generated Imports
 export class Chat extends ChatBase 
 {
@@ -14,7 +14,7 @@ export class Chat extends ChatBase
 instaUser : InstaUserBase;
 //#endregion instaUser Prop
 //#region instaUser1 Prop
-instaUser1 : InstaUserBase;
+// instaUser1 : InstaUserBase;
 //#endregion instaUser1 Prop
 //#region chatDetails Prop
 chatDetails : ChatDetailBase[];

@@ -6376,11 +6376,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\radix\\source\\repos\\Instagram2\\InstagramProjects.UnitOfWork\\InstagramProjects.UnitOfWork.csproj",
+      "projectUniqueName": "E:\\Instagram\\Instagram2\\InstagramProjects.UnitOfWork\\InstagramProjects.UnitOfWork.csproj",
       "projectName": "InstagramProjects.UnitOfWork",
-      "projectPath": "C:\\Users\\radix\\source\\repos\\Instagram2\\InstagramProjects.UnitOfWork\\InstagramProjects.UnitOfWork.csproj",
+      "projectPath": "E:\\Instagram\\Instagram2\\InstagramProjects.UnitOfWork\\InstagramProjects.UnitOfWork.csproj",
       "packagesPath": "C:\\Users\\radix\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\radix\\source\\repos\\Instagram2\\InstagramProjects.UnitOfWork\\obj\\",
+      "outputPath": "E:\\Instagram\\Instagram2\\InstagramProjects.UnitOfWork\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\radix\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6396,8 +6396,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\radix\\source\\repos\\Instagram2\\InstagramProjects.BoundedContext\\InstagramProjects.BoundedContext.csproj": {
-              "projectPath": "C:\\Users\\radix\\source\\repos\\Instagram2\\InstagramProjects.BoundedContext\\InstagramProjects.BoundedContext.csproj"
+            "E:\\Instagram\\Instagram2\\InstagramProjects.BoundedContext\\InstagramProjects.BoundedContext.csproj": {
+              "projectPath": "E:\\Instagram\\Instagram2\\InstagramProjects.BoundedContext\\InstagramProjects.BoundedContext.csproj"
             }
           }
         }

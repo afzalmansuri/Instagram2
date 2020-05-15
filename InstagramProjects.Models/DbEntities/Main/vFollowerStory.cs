@@ -34,6 +34,9 @@ namespace InstagramProjects.Models.Main
         public int FollowBy { get; set; }
 
 
+        public int StoryId { get; set; }
+
+
         public vFollowerStory()
         {
         }

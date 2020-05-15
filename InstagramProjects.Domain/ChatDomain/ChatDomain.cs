@@ -38,6 +38,19 @@ namespace InstagramProjects.Domain.ChatModule
 
         public async Task AddAsync(ChatCustom entity)
         {
+            //var chat = new Chat
+            //{
+            //    SenderId = entity.SenderId,
+            //    RecieverId = entity.RecieverId,
+            //    ChatDetails = new List<ChatDetail>
+            //    {
+            //        new ChatDetail{
+            //        MessageContent = entity.messageContent
+            //        }
+            //    }
+            //};
+            //Uow.RegisterNewAsync(chat);
+            //Uow.CommitAsync();
             await Uow.Repository<Chat>().SingleOrDefaultAsync(a => a.SenderId == entity.SenderId && a.RecieverId == entity.RecieverId);
 
             await DbContextManager.BeginTransactionAsync();

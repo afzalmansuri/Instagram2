@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\radix\\source\\repos\\Instagram2\\InstagramProjects.Models\\InstagramProjects.Models.csproj": {}
+    "E:\\Instagram\\Instagram2\\InstagramProjects.Models\\InstagramProjects.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\radix\\source\\repos\\Instagram2\\InstagramProjects.Models\\InstagramProjects.Models.csproj": {
+    "E:\\Instagram\\Instagram2\\InstagramProjects.Models\\InstagramProjects.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\radix\\source\\repos\\Instagram2\\InstagramProjects.Models\\InstagramProjects.Models.csproj",
+        "projectUniqueName": "E:\\Instagram\\Instagram2\\InstagramProjects.Models\\InstagramProjects.Models.csproj",
         "projectName": "InstagramProjects.Models",
-        "projectPath": "C:\\Users\\radix\\source\\repos\\Instagram2\\InstagramProjects.Models\\InstagramProjects.Models.csproj",
+        "projectPath": "E:\\Instagram\\Instagram2\\InstagramProjects.Models\\InstagramProjects.Models.csproj",
         "packagesPath": "C:\\Users\\radix\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\radix\\source\\repos\\Instagram2\\InstagramProjects.Models\\obj\\",
+        "outputPath": "E:\\Instagram\\Instagram2\\InstagramProjects.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\radix\\AppData\\Roaming\\NuGet\\NuGet.Config",

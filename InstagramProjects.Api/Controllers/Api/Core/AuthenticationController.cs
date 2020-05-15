@@ -32,22 +32,24 @@ namespace InstagramProjects.Api.Controllers
         [AllowRequest(MaxRequestCountPerIp = 100)]
         public async Task<IActionResult> Get()
         {
-            var token = await ApplicationTokenProvider.GetTokenAsync(new vUser { UserId = 0, ApplicationTimeZoneName = string.Empty, LanguageCode = string.Empty });
-            return Ok(token);
+          //  var token = await ApplicationTokenProvider.GetTokenAsync(new InstaUser { InstaUserId = 0});
+            return Ok(0);
         }
 
         [HttpPost]
-        [AllowAnonymousUser]
+        /*[AllowAnonymousUser]*/
+        [AllowAnonymous]
         public async Task<IActionResult> Post(AuthenticationModel authentication)
         {
-            var user = await LoginUow.Repository<vUser>().SingleOrDefaultAsync(t => t.UserName == authentication.UserName && !t.LoginBlocked);
-            if (user != null && PasswordHash.VerifySignature(authentication.Password, user.Password, user.Salt))
+            var user = await LoginUow.Repository<InstaUser>().SingleOrDefaultAsync(t => (t.InstaUserName == authentication.InstaUserName || t.InstaUserEmail == authentication.InstaUserName || t.InstaUserMobileNumber == authentication.InstaUserName));
+            if (user != null && PasswordHash.VerifySignature(authentication.InstaUserPassword, user.InstaUserPassword, user.Salt))
             {
                 var token = await ApplicationTokenProvider.GetTokenAsync(user);
-                return Ok(token);
+                user.token = token;
+                return Ok(user);
             }
             else
-                return BadRequest();
+                return Ok("Invalid");
         }
     }
 }

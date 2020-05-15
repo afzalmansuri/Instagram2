@@ -18,7 +18,9 @@ namespace InstagramProjects.BoundedContext.Main
             #region DbSets
             		public DbSet<Chat> Chats { get; set; }
 		public DbSet<ChatDetail> ChatDetails { get; set; }
+            		public DbSet<vChatWithAllUser> vChatWithAllUsers { get; set; }
             #endregion DbSets
+
 
 
     }

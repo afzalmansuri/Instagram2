@@ -20,3 +20,14 @@ C:\Users\radix\Source\Repos\Instagram2\InstagramProjects.BoundedContext\obj\Debu
 C:\Users\radix\Source\Repos\Instagram2\InstagramProjects.BoundedContext\obj\Debug\netcoreapp3.1\InstagramProjects.BoundedContext.csproj.CopyComplete
 C:\Users\radix\Source\Repos\Instagram2\InstagramProjects.BoundedContext\obj\Debug\netcoreapp3.1\InstagramProjects.BoundedContext.dll
 C:\Users\radix\Source\Repos\Instagram2\InstagramProjects.BoundedContext\obj\Debug\netcoreapp3.1\InstagramProjects.BoundedContext.pdb
+E:\Instagram\Instagram2\InstagramProjects.BoundedContext\bin\Debug\netcoreapp3.1\InstagramProjects.BoundedContext.deps.json
+E:\Instagram\Instagram2\InstagramProjects.BoundedContext\bin\Debug\netcoreapp3.1\InstagramProjects.BoundedContext.dll
+E:\Instagram\Instagram2\InstagramProjects.BoundedContext\bin\Debug\netcoreapp3.1\InstagramProjects.BoundedContext.pdb
+E:\Instagram\Instagram2\InstagramProjects.BoundedContext\bin\Debug\netcoreapp3.1\InstagramProjects.Models.dll
+E:\Instagram\Instagram2\InstagramProjects.BoundedContext\bin\Debug\netcoreapp3.1\InstagramProjects.Models.pdb
+E:\Instagram\Instagram2\InstagramProjects.BoundedContext\obj\Debug\netcoreapp3.1\InstagramProjects.BoundedContext.csprojAssemblyReference.cache
+E:\Instagram\Instagram2\InstagramProjects.BoundedContext\obj\Debug\netcoreapp3.1\InstagramProjects.BoundedContext.AssemblyInfoInputs.cache
+E:\Instagram\Instagram2\InstagramProjects.BoundedContext\obj\Debug\netcoreapp3.1\InstagramProjects.BoundedContext.AssemblyInfo.cs
+E:\Instagram\Instagram2\InstagramProjects.BoundedContext\obj\Debug\netcoreapp3.1\InstagramProjects.BoundedContext.csproj.CopyComplete
+E:\Instagram\Instagram2\InstagramProjects.BoundedContext\obj\Debug\netcoreapp3.1\InstagramProjects.BoundedContext.dll
+E:\Instagram\Instagram2\InstagramProjects.BoundedContext\obj\Debug\netcoreapp3.1\InstagramProjects.BoundedContext.pdb

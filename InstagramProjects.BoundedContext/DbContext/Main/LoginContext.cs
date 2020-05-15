@@ -21,6 +21,7 @@ namespace InstagramProjects.BoundedContext.Main
         public DbSet<RolePermission> RolePermissions { get; set; }
         public DbSet<vUser> Users { get; set; }
 
+        public DbSet<InstaUser> InstaUsers { get; set; }
         #endregion DbSets
 
 

@@ -7,7 +7,7 @@
 	"unitOfWork": "InstagramProjects.UnitOfWork",
     "infrastructure": "InstagramProjects.Infrastructure",
     "azureFunctionHttp":"",
-    "portal":"InstagramProjects-portal",
+    "portal":"instagramProjects-portal",
     "azureFunctionBackground":""
   },
   "path": {

@@ -13,16 +13,17 @@ namespace InstagramProjects.Domain.StoryModule
             this.Uow = uow;
         }
 
-        public Task<object> GetAsync(Story parameters)
+        public async Task<object> GetAsync(Story parameters)
         {
+            return await Uow.Repository<Story>().AllAsync();
             throw new NotImplementedException();
         }
 
         public async Task<object> GetBy(Story parameters)
         {
-            var result = await Uow.Repository<Story>().FindByAsync(t => t.InstaUserId == parameters.InstaUserId);
-            return Task.FromResult(result);
-            throw new NotImplementedException();
+            return  await Uow.Repository<Story>().FindByAsync(t => t.InstaUserId == parameters.InstaUserId);
+            /*return Task.FromResult(result);*/
+         
         }
         
 
@@ -53,8 +54,11 @@ namespace InstagramProjects.Domain.StoryModule
             return ValidationMessages;
         }
 
-        public Task DeleteAsync(Story parameters)
+        public async Task DeleteAsync(Story parameters)
         {
+            var timelinestory = await Uow.Repository<Story>().FindByAsync(t => t.StoryId == parameters.StoryId);
+            await Uow.RegisterDeletedAsync(timelinestory);
+            await Uow.CommitAsync();
             throw new NotImplementedException();
         }
 

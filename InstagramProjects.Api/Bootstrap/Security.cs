@@ -109,6 +109,7 @@ namespace InstagramProjects.Api.Bootstrap
                     var traceId = await exception.LogAsync(context);
                     context.Response.ContentType = "application/json;";
                     await context.Response.WriteAsync("Error Has Occured.");
+                    await context.Response.WriteAsync(exception.ToString());
                     // Log.Error(String.Format("Stacktrace of error: {0}", exception.StackTrace.ToString()));
                 });
             });

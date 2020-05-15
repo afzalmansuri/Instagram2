@@ -7,16 +7,13 @@ using RxWeb.Core.Security;
 using RxWeb.Core.Data;
 using InstagramProjects.Models.ViewModels;
 using InstagramProjects.BoundedContext.SqlContext;
-
-
-
-
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace InstagramProjects.Api.Controllers.InstaUserModule
 {
     [ApiController]
 	[Route("api/[controller]")]
+    [AllowAnonymous]
     public class SearchUserSearchController : ControllerBase
     {
         private IDbContextManager<MainSqlDbContext> DbContextManager { get; set; }
@@ -24,13 +21,13 @@ namespace InstagramProjects.Api.Controllers.InstaUserModule
             DbContextManager = dbContextManager;
         }
 
-		[HttpPost]
-        public async Task<IActionResult> Post([FromBody]Dictionary<string,string> searchParams)
+        [HttpPost]
+        public async Task<IActionResult> Post([FromBody]Dictionary<string, string> searchParams)
         {
             var spParameters = new SqlParameter[1];
             spParameters[0] = new SqlParameter() { ParameterName = "username", Value = searchParams["username"] };
             var result = await DbContextManager.StoreProc<StoreProcResult>("sp_SearchUsername", spParameters);
             return Ok(result.SingleOrDefault()?.Result);
-        }
+        }   
     }
 }

@@ -4,13 +4,14 @@ using InstagramProjects.Domain.InstaUserModule;
 using InstagramProjects.Models.Main;
 using RxWeb.Core.AspNetCore;
 using RxWeb.Core.Security.Authorization;
+using Microsoft.AspNetCore.Authorization;
 
 namespace InstagramProjects.Api.Controllers.InstaUserModule
 {
     [ApiController]
     [Route("api/[controller]")]
-	
-	public class UserDetailsController : BaseDomainController<UserDetail, UserDetail>
+    [AllowAnonymous]
+    public class UserDetailsController : BaseDomainController<UserDetail, UserDetail>
 
     {
         public UserDetailsController(IUserDetailDomain domain):base(domain) {}

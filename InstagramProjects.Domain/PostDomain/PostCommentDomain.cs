@@ -27,7 +27,7 @@ namespace InstagramProjects.Domain.PostModule
 
         public async Task<object> GetBy(PostComment parameters)
         {
-            return await Uow.Repository<PostComment>().FindByAsync(t => t.PostId == parameters.PostId);
+            return await Uow.Repository<vComment>().FindByAsync(t => t.PostId == parameters.PostId);
             throw new NotImplementedException();
         }
         

@@ -25,7 +25,13 @@ namespace InstagramProjects.Models.Main
         public string PostContent { get; set; }
 
 
+        public string InstaUserName { get; set; }
+
+
         public System.DateTimeOffset PostDateTime { get; set; }
+
+
+        public int PostId { get; set; }
 
 
         public vFollowerPost()

@@ -18,8 +18,9 @@ namespace InstagramProjects.Domain.StoryModule
             throw new NotImplementedException();
         }
 
-        public Task<object> GetBy(ViewStory parameters)
+        public async Task<object> GetBy(ViewStory parameters)
         {
+            var result = await Uow.Repository<Story>().FindByAsync(t => t.StoryId == parameters.StoryId);
             throw new NotImplementedException();
         }
         

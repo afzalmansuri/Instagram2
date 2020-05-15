@@ -21,7 +21,13 @@ namespace InstagramProjects.BoundedContext.Main
 		public DbSet<PostComment> PostComments { get; set; }
 		public DbSet<PostShare> PostShares { get; set; }
             		public DbSet<PostTag> PostTags { get; set; }
+            		
+		public DbSet<vComment> vComment { get; set; }
+		public DbSet<vUserPost> vUserPosts { get; set; }
+            		public DbSet<vUserLike> vUserLike { get; set; }
             #endregion DbSets
+
+
 
 
 

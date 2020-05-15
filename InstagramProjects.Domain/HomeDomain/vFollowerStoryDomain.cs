@@ -13,8 +13,9 @@ namespace InstagramProjects.Domain.HomeModule
             this.Uow = uow;
         }
 
-        public Task<object> GetAsync(vFollowerStory parameters)
+        public async Task<object> GetAsync(vFollowerStory parameters)
         {
+            return await Uow.Repository<vFollowerStory>().FindByAsync(t => t.InstaUserId == parameters.InstaUserId);
             throw new NotImplementedException();
         }
 

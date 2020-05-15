@@ -5,13 +5,14 @@ using InstagramProjects.Models.Main;
 using RxWeb.Core.AspNetCore;
 using RxWeb.Core.Security.Authorization;
 using InstagramProjects.Models.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace InstagramProjects.Api.Controllers.ChatModule
 {
     [ApiController]
     [Route("api/[controller]")]
-	
-	public class ChatsController : BaseDomainController<ChatCustom, ChatCustom>
+    [AllowAnonymous]
+    public class ChatsController : BaseDomainController<ChatCustom, ChatCustom>
 
     {
         public ChatsController(IChatDomain domain):base(domain) {}
